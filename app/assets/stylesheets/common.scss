@@ -19,3 +19,23 @@ body{
 .m-auto{
 	margin: auto;
 }
+
+.back{
+
+		background-image:    url(https://previews.123rf.com/images/stockerteam/stockerteam1610/stockerteam161000040/64577822-it-business-icons-pattern-on-white-background-Stock-Photo.jpg);
+		background-size: cover;
+		background-repeat:   repeat;
+		background-position: center center;
+
+
+}
+.mask{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	background-color: #CCCCCC;
+
+}
