@@ -1,7 +1,7 @@
-
-.row.d-flex
-  .col.s12.m4.m-auto
-    .card
+.row.d-flex.strech.back.mb-none
+  .mask
+  .col.s12.m6.l4.m-auto.main
+    .card.mb-none
       .card-content.black-text.center
         = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
           = devise_error_messages!
