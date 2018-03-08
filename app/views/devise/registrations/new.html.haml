@@ -1,21 +1,30 @@
-%h2 Sign up
-= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-  = devise_error_messages!
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    - if @minimum_password_length
-      %em
-        (#{@minimum_password_length} characters minimum)
-    %br/
-    = f.password_field :password, autocomplete: "off"
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "off"
-  .actions
-    = f.submit "Sign up"
-= render "devise/shared/links"
+
+.row.d-flex
+  .col.s12.m4.m-auto
+    .card
+      .card-content.black-text.center
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = devise_error_messages!
+          %h3.primary-text.center Sign Up
+          %col.s12
+            .row
+              .input-field.col.s12
+                %input#email.validate{:type => "email"}/
+                %label{:for => "email"} Email
+            .row
+              .input-field.col.s12
+                %input#password.validate{:type => "password"}/
+                %label{:for => "password"} Password
+                - if @minimum_password_length
+                  %em
+                    (#{@minimum_password_length} characters minimum)
+                %br/
+            .row
+              .input-field.col.s12
+                %input#confirm_password.validate{:type => "password"}/
+                %label{:for => "confirm_password"} Confirm Password
+
+            .row
+              .actions.col.s12
+                = f.submit "Sign up",class:"col s12 btn"
+            = render "devise/shared/links"
