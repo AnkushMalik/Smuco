@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'businesses/show'
+
   devise_for :businesses
   root 'home#index'
 
