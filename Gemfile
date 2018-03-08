@@ -8,10 +8,12 @@ end
 gem 'rails', '~> 5.1.5'
 gem 'devise'
 gem 'sqlite3'
+gem 'materialize-sass', '~> 1.0.0.alpha4'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'jquery-rails'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
